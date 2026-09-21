@@ -17,16 +17,16 @@ import {
   Check,
 } from "lucide-react";
 
-import f1 from "@/assets/foto-1.jpg.asset.json";
-import f2 from "@/assets/foto-2.jpg.asset.json";
-import f3 from "@/assets/foto-3.jpg.asset.json";
-import f4 from "@/assets/foto-4.jpg.asset.json";
-import f5 from "@/assets/foto-5.jpg.asset.json";
-import f10 from "@/assets/foto-10.jpg.asset.json";
-import f13 from "@/assets/foto-13.jpg.asset.json";
-import f14 from "@/assets/foto-14.jpg.asset.json";
-import f22 from "@/assets/foto-22.jpg.asset.json";
-import f24 from "@/assets/foto-24.jpg.asset.json";
+import f1 from "@/assets/photos/foto-1.jpg";
+import f2 from "@/assets/photos/foto-2.jpg";
+import f3 from "@/assets/photos/foto-3.jpg";
+import f4 from "@/assets/photos/foto-4.jpg";
+import f5 from "@/assets/photos/foto-5.jpg";
+import f10 from "@/assets/photos/foto-10.jpg";
+import f13 from "@/assets/photos/foto-13.jpg";
+import f14 from "@/assets/photos/foto-14.jpg";
+import f22 from "@/assets/photos/foto-22.jpg";
+import f24 from "@/assets/photos/foto-24.jpg";
 import { REVIEWS } from "@/components/site/reviewsData";
 
 export const WHATSAPP =
@@ -139,7 +139,7 @@ export function Hero() {
   return (
     <section id="inicio" className="relative flex min-h-[100svh] items-end overflow-hidden">
       <img
-        src={f13.url}
+        src={f13}
         alt="Churrasco na brasa servido com arroz, farofa e vinagrete"
         className="absolute inset-0 size-full object-cover"
       />
@@ -242,7 +242,7 @@ export function About() {
         </div>
         <div className="relative">
           <img
-            src={f24.url}
+            src={f24}
             alt="Prato de churrasco com fritas, arroz, farofa e feijão"
             className="aspect-4/5 w-full object-cover shadow-2xl"
           />
@@ -262,25 +262,25 @@ export function Specialties() {
       icon: Beef,
       title: "Carnes na brasa",
       text: "Carnes preparadas na brasa para preservar sabor, suculência e aquele aroma irresistível de churrasco.",
-      img: f13.url,
+      img: f13,
     },
     {
       icon: UtensilsCrossed,
       title: "Porções",
       text: "Opções para compartilhar com a família e os amigos.",
-      img: f22.url,
+      img: f22,
     },
     {
       icon: Beer,
       title: "Bebidas",
       text: "Cervejas, drinks, vinhos e outras opções para acompanhar sua refeição.",
-      img: f14.url,
+      img: f14,
     },
     {
       icon: Cake,
       title: "Acompanhamentos",
       text: "Arroz, farofa, vinagrete e tudo que deixa o churrasco completo.",
-      img: f10.url,
+      img: f10,
     },
   ];
   return (
@@ -319,7 +319,7 @@ export function FireBanner() {
   return (
     <section className="relative overflow-hidden py-28 md:py-40">
       <img
-        src={f24.url}
+        src={f24}
         alt="Carnes na brasa servidas na mesa"
         className="absolute inset-0 size-full object-cover"
       />
@@ -342,11 +342,11 @@ export function FireBanner() {
 
 export function MenuSection() {
   const pages = [
-    { url: f3.url, label: "Grelhados, vinhos, drinks e caipirinhas" },
-    { url: f4.url, label: "Porções" },
-    { url: f1.url, label: "Cardápio — pratos e bebidas" },
-    { url: f2.url, label: "Cardápio — destaques da casa" },
-    { url: f5.url, label: "Cardápio — sobremesas e mais" },
+    { url: f3, label: "Grelhados, vinhos, drinks e caipirinhas" },
+    { url: f4, label: "Porções" },
+    { url: f1, label: "Cardápio — pratos e bebidas" },
+    { url: f2, label: "Cardápio — destaques da casa" },
+    { url: f5, label: "Cardápio — sobremesas e mais" },
   ];
   return (
     <section id="cardapio" className="bg-background py-20 md:py-28">
@@ -400,8 +400,8 @@ export function Ambience() {
     <section id="ambiente" className="bg-secondary py-20 md:py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 lg:grid-cols-2 lg:gap-16">
         <div className="grid grid-cols-2 gap-4">
-          <img src={f14.url} alt="Mesa com fritas, farofa e chope" className="aspect-square w-full object-cover" />
-          <img src={f22.url} alt="Porção frita servida com limão" className="mt-8 aspect-square w-full object-cover" />
+          <img src={f14} alt="Mesa com fritas, farofa e chope" className="aspect-square w-full object-cover" />
+          <img src={f22} alt="Porção frita servida com limão" className="mt-8 aspect-square w-full object-cover" />
         </div>
         <div>
           <h2 className="font-display text-4xl leading-tight text-charcoal md:text-6xl">
@@ -501,14 +501,14 @@ export function Gallery() {
 
         <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:grid-rows-2">
           <img
-            src={f13.url}
+            src={f13}
             alt="Churrasco completo servido na mesa"
             className="col-span-2 row-span-2 h-64 w-full object-cover md:h-full"
           />
-          <img src={f24.url} alt="Prato de carnes com feijão" className="h-40 w-full object-cover md:h-full" />
-          <img src={f14.url} alt="Chope, fritas e farofa" className="h-40 w-full object-cover md:h-full" />
-          <img src={f22.url} alt="Porção de frango frito com limão" className="h-40 w-full object-cover md:h-full" />
-          <img src={f10.url} alt="Farofa especial da casa" className="h-40 w-full object-cover md:h-full" />
+          <img src={f24} alt="Prato de carnes com feijão" className="h-40 w-full object-cover md:h-full" />
+          <img src={f14} alt="Chope, fritas e farofa" className="h-40 w-full object-cover md:h-full" />
+          <img src={f22} alt="Porção de frango frito com limão" className="h-40 w-full object-cover md:h-full" />
+          <img src={f10} alt="Farofa especial da casa" className="h-40 w-full object-cover md:h-full" />
         </div>
 
         <div className="mt-12 text-center">
@@ -661,7 +661,7 @@ export function FinalCta() {
   return (
     <section className="relative overflow-hidden py-24 md:py-36">
       <img
-        src={f14.url}
+        src={f14}
         alt="Mesa servida com porções e chope"
         className="absolute inset-0 size-full object-cover"
       />
